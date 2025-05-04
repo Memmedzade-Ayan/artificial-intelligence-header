@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "width" 100px;
+}
+
+*,
+*::before,
+*::after {
+  text-decoration: none;
+  margin: 0;
+}
+
+header nav {
+  display: none;
+}
+
+header {
+  background: linear-gradient(to bottom, #09121f, #0b131f);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  width: 200px;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.button {
+  background-color: #3A68B8;
+  padding: 10px;
+  border: 1px solid transparent;
+  color: #fff;
+  width: 65px;
+}
+
+
+@media (min-width: 768px) {
+  header nav {
+    display: flex;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  header nav a {
+    margin-left: 40px;
+    color: #fff;
+  }
+
+  header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 12, 45);
+  }
+
+  .button {
+    margin-left: 15px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  header nav {
+    display: flex;
+    margin-left: -250px;
+  }
+
+  .logo {
+     transform: translateX(130px);
+    
+  }
+
+  .button {
+    margin-left: 15px;
+    transform: translateX(-250px);
+  }
+}
